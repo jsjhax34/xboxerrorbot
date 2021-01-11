@@ -1,0 +1,50 @@
+{
+  "0001": {
+    "type": "secondary",
+    "summary": "ERROR_V_12P0",
+    "explanation": "ANA_V12P0_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_12P0 rail"
+  },
+  "0002": {
+    "type": "secondary",
+    "summary": "ERROR_V_CPUCORE",
+    "explanation": "VREG_CPU_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_CPUCORE rail"
+  },
+  "0003": {
+    "type": "secondary",
+    "summary": "ERROR_V_GPUCORE",
+    "explanation": "VREG_GPU_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_GPUCORE rail"
+  },
+  "0010": {
+    "type": "secondary",
+    "summary": "ERROR_NO_HANA / ERROR_NO_ANA",
+    "explanation": "HANA/ANA is not responding to reads or writes",
+    "solution": "Replace HANA/ANA or Southbridge"
+  },
+  "0011": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_CPU",
+    "explanation": "CPU temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0012": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_GPU",
+    "explanation": "GPU temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0013": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_EDRAM",
+    "explanation": "eDRAM temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0020": {
+    "type": "secondary",
+    "summary": "ERROR_GPU_RST_DONE",
+    "explanation": "GPU_RST_DONE signal missing after seqUnReset time passed",
+    "solution": "Replace GPU"
+  }
+}
