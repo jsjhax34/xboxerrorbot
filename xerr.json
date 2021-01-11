@@ -484,4 +484,143 @@
     "summary": "Unknown",
     "explanation": "Unknown - update related?",
     "solution": "Replace GPU?"
+  },
+  "2123": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_1",
+    "explanation": "2BL fusecheck: first fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2130": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_2",
+    "explanation": "2BL fusecheck: first fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2131": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_3",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2132": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_4",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2133": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_5",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2200": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_6",
+    "explanation": "2BL fusecheck: fuse LDV is greater than bootloader LDV",
+    "solution": "Unknown"
+  },
+  "2201": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_7",
+    "explanation": "2BL fusecheck: CPU Key invalid",
+    "solution": "Unknown"
+  },
+  "2202": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_8",
+    "explanation": "2BL fusecheck: pairing data mismatch",
+    "solution": "Unknown"
+  },
+  "2203": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_9",
+    "explanation": "2BL fusecheck: pairing data mismatch",
+    "solution": "Unknown"
+  },
+  "2211": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_OFFSET_3BL",
+    "explanation": "Signature of the 3BL offset is invalid",
+    "solution": "Unknown"
+  },
+  "2212": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_LOCATE_3BL",
+    "explanation": "3BL is not in the correct place on the NAND",
+    "solution": "Unknown"
+  },
+  "2213": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_HEADER_3BL",
+    "explanation": "Signature of the 3BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2220": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SIG_VERIFY_3BL",
+    "explanation": "Signature of 3BL is invalid",
+    "solution": "Unknown"
+  },
+  "2221": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_HWINIT",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  },
+  "2222": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_OFFSET_4BL",
+    "explanation": "Signature of 4BL offset is invalid",
+    "solution": "Unknown"
+  },
+  "2223": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_HEADER_4BL",
+    "explanation": "Signature of 4BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2230": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SIG_VERIFY_4BL",
+    "explanation": "Signature of 4BL is invalid",
+    "solution": "Unknown"
+  },
+  "2231": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SHA_VERIFY_4BL",
+    "explanation": "SHA of 4BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2232": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_UNEXPECTED_INTERRUPT",
+    "explanation": "Processor issued non-RESET interrupt during boot chain",
+    "solution": "Unknown"
+  },
+  "2301": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_VERIFY_OFFSET",
+    "explanation": "Signature of CF or Kernel/Hypervisor patch offsets are invalid",
+    "solution": "Unknown"
+  },
+  "2303": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_SHA_VERIFY_SHA",
+    "explanation": "SHA of CF or Kernel/Hypervisor patch offsets are invalid",
+    "solution": "Unknown"
+  },
+  "2310": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_LZX_EXPAND",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  },
+  "2311": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_LOAD_6BL",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  }
 }
