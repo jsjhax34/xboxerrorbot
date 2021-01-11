@@ -1,0 +1,626 @@
+{
+  "fallback": {
+    "type": "Unknown",
+    "summary": "Unknown",
+    "explanation": "I don't know this one! Please contact the devs or make a pull request on GitHub.",
+    "solution": "Unknown"
+  },
+  "0001": {
+    "type": "secondary",
+    "summary": "ERROR_V_12P0",
+    "explanation": "ANA_V12P0_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_12P0 rail"
+  },
+  "0002": {
+    "type": "secondary",
+    "summary": "ERROR_V_CPUCORE",
+    "explanation": "VREG_CPU_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_CPUCORE rail"
+  },
+  "0003": {
+    "type": "secondary",
+    "summary": "ERROR_V_GPUCORE",
+    "explanation": "VREG_GPU_PWRGD negated unexpectedly",
+    "solution": "Replace Power Supply, Test and replace MOSFETs, caps, and controller chip on V_GPUCORE rail"
+  },
+  "0010": {
+    "type": "secondary",
+    "summary": "ERROR_NO_HANA / ERROR_NO_ANA",
+    "explanation": "HANA/ANA is not responding to reads or writes",
+    "solution": "Replace HANA/ANA or Southbridge"
+  },
+  "0011": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_CPU",
+    "explanation": "CPU temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0012": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_GPU",
+    "explanation": "GPU temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0013": {
+    "type": "secondary",
+    "summary": "ERROR_THERMAL_EDRAM",
+    "explanation": "eDRAM temperature overload",
+    "solution": "Check heatsink, x-clamps, thermal paste, or fans. Corona: Check R4D3, R4D4, R4D5, R4D6, R4D7, R4D8 resistors if overheating happens instantly "
+  },
+  "0020": {
+    "type": "secondary",
+    "summary": "ERROR_GPU_RST_DONE",
+    "explanation": "GPU_RST_DONE signal missing after seqUnReset time passed",
+    "solution": "Replace GPU"
+  },
+  "0021": {
+    "type": "secondary",
+    "summary": "ERROR_NO_PCIE",
+    "explanation": "PCIE link did not enter L0 after seqUnReset time passed",
+    "solution": "Replace GPU, Southbridge, or Ethernet chip"
+  },
+  "0022": {
+    "type": "secondary",
+    "summary": "ERROR_NO_HANDSHAKE",
+    "explanation": "CPU did not send GetPowerUpCause to SMC",
+    "solution": "Unknown"
+  },
+  "0023": {
+    "type": "secondary",
+    "summary": "ERROR_NO_CLOCKCHIP",
+    "explanation": "Xenon: ANA_BCKUP is not responding to reads or writes. Others: Unknown error related to clockchip.",
+    "solution": "Xenon: Replace ANA_BCKUP, ANA, or Southbridge. Zephyr, Falcon, Jasper: Replace HANA. Trinity: Replace C4E3 cap, replace HANA. Corona: Replace C4E3 cap, replace Southbridge"
+  },
+  "0030": {
+    "type": "secondary",
+    "summary": "ERROR_NO_TEMPERATURES",
+    "explanation": "HANA/ANA temperature registers read as zero",
+    "solution": "Check for shorted resistors, replace HANA/ANA"
+  },
+  "0031": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "GPU clock or power related",
+    "solution": "Check for shorted resistors near Southbridge and GPU, replace GPU"
+  },
+  "0032": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "CPU_RST_N related",
+    "solution": "Check/repair traces carrying CPU_RST_N. Slim: Check between C5R11, R4D4 and R4P5"
+  },
+  "0033": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Aud_Clamp related",
+    "solution": "Check C7F2, Aud_Clamp circuit"
+  },
+  "0100": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_VENDOR_ID",
+    "explanation": "RAM Vendor ID wrong, or not detected",
+    "solution": "Unknown"
+  },
+  "e16": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_VENDOR_ID",
+    "explanation": "RAM Vendor ID wrong, or not detected",
+    "solution": "Unknown"
+  },
+  "0101": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DATA_WRITE",
+    "explanation": "Could not write data for RAM read strobe training",
+    "solution": "Unknown"
+  },
+  "e17": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DATA_WRITE",
+    "explanation": "Could not write data for RAM read strobe training",
+    "solution": "Unknown"
+  },
+  "0102": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+    "explanation": "Memory read strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "e18": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+    "explanation": "Memory read strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "0103": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+    "explanation": "Memory write strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "e19": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+    "explanation": "Memory write strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "0110": {
+    "type": "secondary",
+    "summary": "ERROR_MEMORY_ADDRESSING",
+    "explanation": "Memory address line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "e20": {
+    "type": "ecode",
+    "summary": "ERROR_MEMORY_ADDRESSING",
+    "explanation": "Memory address line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "0111": {
+    "type": "secondary",
+    "summary": "ERROR_MEMORY_DATA",
+    "explanation": "Memory data line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "e21": {
+    "type": "ecode",
+    "summary": "ERROR_MEMORY_DATA",
+    "explanation": "Memory data line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "0300": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e48": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0301": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_UNABLE_TO_CONNECT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e49": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_UNABLE_TO_CONNECT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0302": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_CONNECTX_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e50": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_CONNECTX_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0303": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e51": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_GATEWAY_ERROR",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0310": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_BAD_RESPONSE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e52": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_BAD_RESPONSE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0311": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_CHALLENGE_REFUSED",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e53": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_CHALLENGE_REFUSED",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0312": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_BAD_VAULT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e54": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_BAD_VAULT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0313": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_MANUF_TEST",
+    "explanation": "Manually triggered error code",
+    "solution": "Unknown"
+  },
+  "1000": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_TIMED_OUT",
+    "explanation": "Kernel DVD drive communication timed out",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e64": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_CDROM_TIMED_OUT",
+    "explanation": "Kernel DVD drive communication timed out",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1001": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure DVD drive for DMA mode",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e65": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure DVD drive for DMA mode",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1002": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create DVD drive instance",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e66": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create DVD drive instance",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1003": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_TIMED_OUT",
+    "explanation": "Kernel HDD communication timed out",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e67": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_TIMED_OUT",
+    "explanation": "Kernel HDD communication timed out",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1010": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure HDD for DMA mode",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e68": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure HDD for DMA mode",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1011": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create HDD instance",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e69": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create HDD instance",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1012": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_NOT_FOUND",
+    "explanation": "Kernel couldn't find HDD. Note: This error does not show up because a HDD is missing, it shows up when a HDD is detected, but can't be found",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e70": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_NOT_FOUND",
+    "explanation": "Kernel couldn't find HDD. Note: This error does not show up because a HDD is missing, it shows up when a HDD is detected, but can't be found",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1013": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_XAM_NO_DASH",
+    "explanation": "XAM could not find dash.xex on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "e71": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_XAM_NO_DASH",
+    "explanation": "XAM could not find dash.xex on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "1020": {
+    "type": "secondary",
+    "summary": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+    "explanation": "SMC configuration corrupt",
+    "solution": "Rebuild and reflash NAND"
+  },
+  "e72": {
+    "type": "ecode",
+    "summary": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+    "explanation": "SMC configuration corrupt",
+    "solution": "Rebuild and reflash NAND"
+  },
+  "1021": {
+    "type": "secondary",
+    "summary": "ERROR_HSIO_TRAINING_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "e73": {
+    "type": "ecode",
+    "summary": "ERROR_HSIO_TRAINING_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "1022": {
+    "type": "secondary",
+    "summary": "ERROR_HSIO_CALIBRATION_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "e74": {
+    "type": "ecode",
+    "summary": "ERROR_HSIO_CALIBRATION_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "1023": {
+    "type": "secondary",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+    "explanation": "Southbridge could not communicate with Ethernet PHY over MDIO/MDC",
+    "solution": "Replace Ethernet chip, replace Southbridge"
+  },
+  "e75": {
+    "type": "ecode",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+    "explanation": "Southbridge could not communicate with Ethernet PHY over MDIO/MDC",
+    "solution": "Replace Ethernet chip, replace Southbridge"
+  },
+  "1030": {
+    "type": "secondary",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_RESET_FAIL",
+    "explanation": "Ethernet PHY failed to reset correctly or complete reset",
+    "solution": "Replace Ethernet chip"
+  },
+  "e76": {
+    "type": "ecode",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_RESET_FAIL",
+    "explanation": "Ethernet PHY failed to reset correctly or complete reset",
+    "solution": "Replace Ethernet chip"
+  },
+  "1031": {
+    "type": "secondary",
+    "summary": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+    "explanation": "Could not read or write to Ethernet PHY",
+    "solution": "Replace Ethernet chip"
+  },
+  "e77": {
+    "type": "ecode",
+    "summary": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+    "explanation": "Could not read or write to Ethernet PHY",
+    "solution": "Replace Ethernet chip"
+  },
+  "1032": {
+    "type": "secondary",
+    "summary": "ERROR_UNSUPPORTED_GPU",
+    "explanation": "GPU is down revision, not supported on this board",
+    "solution": "Replace GPU with correct revision for board"
+  },
+  "e78": {
+    "type": "ecode",
+    "summary": "ERROR_UNSUPPORTED_GPU",
+    "explanation": "GPU is down revision, not supported on this board",
+    "solution": "Replace GPU with correct revision for board"
+  },
+  "1033": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_FLASH_NO_XAM",
+    "explanation": "xam.xex not found on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "e79": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_FLASH_NO_XAM",
+    "explanation": "xam.xex not found on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "1100": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "NAND LDV does not match eFUSE",
+    "solution": "Rebuild NAND with correct LDV. Phat: Check value of R6T3 resistor"
+  },
+  "e80": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "NAND LDV does not match eFUSE",
+    "solution": "Rebuild NAND with correct LDV. Phat: Check value of R6T3 resistor"
+  },
+  "1101": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Rebuild NAND?"
+  },
+  "e81": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Rebuild NAND?"
+  },
+  "1102": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Unknown - eDRAM/HSIO related?",
+    "solution": "Rebuild NAND?"
+  },
+  "e82": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Replace GPU?"
+  },
+  "2123": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_1",
+    "explanation": "2BL fusecheck: first fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2130": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_2",
+    "explanation": "2BL fusecheck: first fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2131": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_3",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2132": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_4",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2133": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_5",
+    "explanation": "2BL fusecheck: second fuseline mismatch",
+    "solution": "Unknown"
+  },
+  "2200": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_6",
+    "explanation": "2BL fusecheck: fuse LDV is greater than bootloader LDV",
+    "solution": "Unknown"
+  },
+  "2201": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_7",
+    "explanation": "2BL fusecheck: CPU Key invalid",
+    "solution": "Unknown"
+  },
+  "2202": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_8",
+    "explanation": "2BL fusecheck: pairing data mismatch",
+    "solution": "Unknown"
+  },
+  "2203": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_SECOTP_9",
+    "explanation": "2BL fusecheck: pairing data mismatch",
+    "solution": "Unknown"
+  },
+  "2211": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_OFFSET_3BL",
+    "explanation": "Signature of the 3BL offset is invalid",
+    "solution": "Unknown"
+  },
+  "2212": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_LOCATE_3BL",
+    "explanation": "3BL is not in the correct place on the NAND",
+    "solution": "Unknown"
+  },
+  "2213": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_HEADER_3BL",
+    "explanation": "Signature of the 3BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2220": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SIG_VERIFY_3BL",
+    "explanation": "Signature of 3BL is invalid",
+    "solution": "Unknown"
+  },
+  "2221": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_HWINIT",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  },
+  "2222": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_OFFSET_4BL",
+    "explanation": "Signature of 4BL offset is invalid",
+    "solution": "Unknown"
+  },
+  "2223": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_VERIFY_HEADER_4BL",
+    "explanation": "Signature of 4BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2230": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SIG_VERIFY_4BL",
+    "explanation": "Signature of 4BL is invalid",
+    "solution": "Unknown"
+  },
+  "2231": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_SHA_VERIFY_4BL",
+    "explanation": "SHA of 4BL header is invalid",
+    "solution": "Unknown"
+  },
+  "2232": {
+    "type": "secondary",
+    "summary": "ERROR_POST_2BL_E_UNEXPECTED_INTERRUPT",
+    "explanation": "Processor issued non-RESET interrupt during boot chain",
+    "solution": "Unknown"
+  },
+  "2301": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_VERIFY_OFFSET",
+    "explanation": "Signature of CF or Kernel/Hypervisor patch offsets are invalid",
+    "solution": "Unknown"
+  },
+  "2303": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_SHA_VERIFY_SHA",
+    "explanation": "SHA of CF or Kernel/Hypervisor patch offsets are invalid",
+    "solution": "Unknown"
+  },
+  "2310": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_LZX_EXPAND",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  },
+  "2311": {
+    "type": "secondary",
+    "summary": "ERROR_POST_4BL_E_LOAD_6BL",
+    "explanation": "Unknown",
+    "solution": "Unknown"
+  }
+}
