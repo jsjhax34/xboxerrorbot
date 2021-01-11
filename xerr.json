@@ -1,4 +1,10 @@
 {
+  "fallback": {
+    "type": "Unknown",
+    "summary": "Unknown",
+    "explanation": "I don't know this one! Please contact the devs or make a pull request on GitHub.",
+    "solution": "Unknown"
+  },
   "0001": {
     "type": "secondary",
     "summary": "ERROR_V_12P0",
@@ -46,5 +52,215 @@
     "summary": "ERROR_GPU_RST_DONE",
     "explanation": "GPU_RST_DONE signal missing after seqUnReset time passed",
     "solution": "Replace GPU"
+  },
+  "0021": {
+    "type": "secondary",
+    "summary": "ERROR_NO_PCIE",
+    "explanation": "PCIE link did not enter L0 after seqUnReset time passed",
+    "solution": "Replace GPU, Southbridge, or Ethernet chip"
+  },
+  "0022": {
+    "type": "secondary",
+    "summary": "ERROR_NO_HANDSHAKE",
+    "explanation": "CPU did not send GetPowerUpCause to SMC",
+    "solution": "Unknown"
+  },
+  "0023": {
+    "type": "secondary",
+    "summary": "ERROR_NO_CLOCKCHIP",
+    "explanation": "Xenon: ANA_BCKUP is not responding to reads or writes. Others: Unknown error related to clockchip.",
+    "solution": "Xenon: Replace ANA_BCKUP, ANA, or Southbridge. Zephyr, Falcon, Jasper: Replace HANA. Trinity: Replace C4E3 cap, replace HANA. Corona: Replace C4E3 cap, replace Southbridge"
+  },
+  "0030": {
+    "type": "secondary",
+    "summary": "ERROR_NO_TEMPERATURES",
+    "explanation": "HANA/ANA temperature registers read as zero",
+    "solution": "Check for shorted resistors, replace HANA/ANA"
+  },
+  "0031": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "GPU clock or power related",
+    "solution": "Check for shorted resistors near Southbridge and GPU, replace GPU"
+  },
+  "0032": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "CPU_RST_N related",
+    "solution": "Check/repair traces carrying CPU_RST_N. Slim: Check between C5R11, R4D4 and R4P5"
+  },
+  "0033": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Aud_Clamp related",
+    "solution": "Check C7F2, Aud_Clamp circuit"
+  },
+  "0100": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_VENDOR_ID",
+    "explanation": "RAM Vendor ID wrong, or not detected",
+    "solution": "Unknown"
+  },
+  "e16": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_VENDOR_ID",
+    "explanation": "RAM Vendor ID wrong, or not detected",
+    "solution": "Unknown"
+  },
+  "0101": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DATA_WRITE",
+    "explanation": "Could not write data for RAM read strobe training",
+    "solution": "Unknown"
+  },
+  "e17": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DATA_WRITE",
+    "explanation": "Could not write data for RAM read strobe training",
+    "solution": "Unknown"
+  },
+  "0102": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+    "explanation": "Memory read strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "e18": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_READ_STROBE_DELAY_TRAINING",
+    "explanation": "Memory read strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "0103": {
+    "type": "secondary",
+    "summary": "ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+    "explanation": "Memory write strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "e19": {
+    "type": "ecode",
+    "summary": "ERROR_NBINIT_MEM_WRITE_STROBE_DELAY_TRAINING",
+    "explanation": "Memory write strobe delay training failed",
+    "solution": "Unknown"
+  },
+  "0110": {
+    "type": "secondary",
+    "summary": "ERROR_MEMORY_ADDRESSING",
+    "explanation": "Memory address line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "e20": {
+    "type": "ecode",
+    "summary": "ERROR_MEMORY_ADDRESSING",
+    "explanation": "Memory address line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "0111": {
+    "type": "secondary",
+    "summary": "ERROR_MEMORY_DATA",
+    "explanation": "Memory data line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "e21": {
+    "type": "ecode",
+    "summary": "ERROR_MEMORY_DATA",
+    "explanation": "Memory data line failed or unresponsive",
+    "solution": "Unknown"
+  },
+  "0300": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e48": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0301": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_UNABLE_TO_CONNECT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e49": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_UNABLE_TO_CONNECT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0302": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_CONNECTX_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e50": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_CONNECTX_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0303": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_COMM_FAILURE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e51": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_GATEWAY_ERROR",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0310": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_BAD_RESPONSE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e52": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_BAD_RESPONSE",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0311": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_CHALLENGE_REFUSED",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e53": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_CHALLENGE_REFUSED",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0312": {
+    "type": "secondary",
+    "summary": "ERROR_MFG_BAD_VAULT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "e54": {
+    "type": "ecode",
+    "summary": "ERROR_MFG_BAD_VAULT",
+    "explanation": "Console is in manufacturing mode",
+    "solution": "Unknown"
+  },
+  "0313": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_MANUF_TEST",
+    "explanation": "Manually triggered error code",
+    "solution": "Unknown"
+  },
+  "e55": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_MANUF_TEST",
+    "explanation": "Manually triggered error code",
+    "solution": "Unknown"
   }
 }
