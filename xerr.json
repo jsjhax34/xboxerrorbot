@@ -257,10 +257,208 @@
     "explanation": "Manually triggered error code",
     "solution": "Unknown"
   },
-  "e55": {
+  "1000": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_TIMED_OUT",
+    "explanation": "Kernel DVD drive communication timed out",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e64": {
     "type": "ecode",
-    "summary": "ERROR_XSS_MANUF_TEST",
-    "explanation": "Manually triggered error code",
-    "solution": "Unknown"
+    "summary": "ERROR_XSS_CDROM_TIMED_OUT",
+    "explanation": "Kernel DVD drive communication timed out",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1001": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure DVD drive for DMA mode",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e65": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_CDROM_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure DVD drive for DMA mode",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1002": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create DVD drive instance",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "e66": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_CDROM_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create DVD drive instance",
+    "solution": "Replace SATA cable to DVD drive, replace DVD drive PCB, replace Southbridge"
+  },
+  "1003": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_TIMED_OUT",
+    "explanation": "Kernel HDD communication timed out",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e67": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_TIMED_OUT",
+    "explanation": "Kernel HDD communication timed out",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1010": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure HDD for DMA mode",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e68": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_NOT_DMA_CONFIGURED",
+    "explanation": "Kernel could not configure HDD for DMA mode",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1011": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create HDD instance",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e69": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_COULD_NOT_CREATE_DEVICE",
+    "explanation": "Kernel could not create HDD instance",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1012": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_HDD_NOT_FOUND",
+    "explanation": "Kernel couldn't find HDD. Note: This error does not show up because a HDD is missing, it shows up when a HDD is detected, but can't be found",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "e70": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_HDD_NOT_FOUND",
+    "explanation": "Kernel couldn't find HDD. Note: This error does not show up because a HDD is missing, it shows up when a HDD is detected, but can't be found",
+    "solution": "Replace HDD, replace HDD port/cable, replace Southbridge"
+  },
+  "1013": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_XAM_NO_DASH",
+    "explanation": "XAM could not find dash.xex on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "e71": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_XAM_NO_DASH",
+    "explanation": "XAM could not find dash.xex on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "1020": {
+    "type": "secondary",
+    "summary": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+    "explanation": "SMC configuration corrupt",
+    "solution": "Rebuild and reflash NAND"
+  },
+  "e72": {
+    "type": "ecode",
+    "summary": "ERROR_SMC_FLASH_CONFIG_CORRUPT",
+    "explanation": "SMC configuration corrupt",
+    "solution": "Rebuild and reflash NAND"
+  },
+  "1021": {
+    "type": "secondary",
+    "summary": "ERROR_HSIO_TRAINING_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "e73": {
+    "type": "ecode",
+    "summary": "ERROR_HSIO_TRAINING_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "1022": {
+    "type": "secondary",
+    "summary": "ERROR_HSIO_CALIBRATION_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "e74": {
+    "type": "ecode",
+    "summary": "ERROR_HSIO_CALIBRATION_FAILED",
+    "explanation": "GPU to eDRAM High Speed Link failed, eDRAM faulty or unresponsive",
+    "solution": "Replace GPU"
+  },
+  "1023": {
+    "type": "secondary",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+    "explanation": "Southbridge could not communicate with Ethernet PHY over MDIO/MDC",
+    "solution": "Replace Ethernet chip, replace Southbridge"
+  },
+  "e75": {
+    "type": "ecode",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_VENDOR",
+    "explanation": "Southbridge could not communicate with Ethernet PHY over MDIO/MDC",
+    "solution": "Replace Ethernet chip, replace Southbridge"
+  },
+  "1030": {
+    "type": "secondary",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_RESET_FAIL",
+    "explanation": "Ethernet PHY failed to reset correctly or complete reset",
+    "solution": "Replace Ethernet chip"
+  },
+  "e76": {
+    "type": "ecode",
+    "summary": "ERROR_UNEXPECTED_ETHERNET_PHY_RESET_FAIL",
+    "explanation": "Ethernet PHY failed to reset correctly or complete reset",
+    "solution": "Replace Ethernet chip"
+  },
+  "1031": {
+    "type": "secondary",
+    "summary": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+    "explanation": "Could not read or write to Ethernet PHY",
+    "solution": "Replace Ethernet chip"
+  },
+  "e77": {
+    "type": "ecode",
+    "summary": "ERROR_ETHERNET_PHY_READ_WRITE_FAIL",
+    "explanation": "Could not read or write to Ethernet PHY",
+    "solution": "Replace Ethernet chip"
+  },
+  "1032": {
+    "type": "secondary",
+    "summary": "ERROR_UNSUPPORTED_GPU",
+    "explanation": "GPU is down revision, not supported on this board",
+    "solution": "Replace GPU with correct revision for board"
+  },
+  "e78": {
+    "type": "ecode",
+    "summary": "ERROR_UNSUPPORTED_GPU",
+    "explanation": "GPU is down revision, not supported on this board",
+    "solution": "Replace GPU with correct revision for board"
+  },
+  "1033": {
+    "type": "secondary",
+    "summary": "ERROR_XSS_FLASH_NO_XAM",
+    "explanation": "xam.xex not found on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "e79": {
+    "type": "ecode",
+    "summary": "ERROR_XSS_FLASH_NO_XAM",
+    "explanation": "xam.xex not found on flash",
+    "solution": "Unplug HDD - if error clears, format or replace HDD. Otherwise, rebuild and reflash NAND"
+  },
+  "1100": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "NAND LDV does not match eFUSE",
+    "solution": "Rebuild NAND with correct LDV. Phat: Check value of R6T3 resistor"
+  },
+  "e80": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "NAND LDV does not match eFUSE",
+    "solution": "Rebuild NAND with correct LDV. Phat: Check value of R6T3 resistor"
   }
 }
