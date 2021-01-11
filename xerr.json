@@ -460,5 +460,28 @@
     "summary": "Unknown",
     "explanation": "NAND LDV does not match eFUSE",
     "solution": "Rebuild NAND with correct LDV. Phat: Check value of R6T3 resistor"
-  }
+  },
+  "1101": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Rebuild NAND?"
+  },
+  "e81": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Rebuild NAND?"
+  },
+  "1102": {
+    "type": "secondary",
+    "summary": "Unknown",
+    "explanation": "Unknown - eDRAM/HSIO related?",
+    "solution": "Rebuild NAND?"
+  },
+  "e82": {
+    "type": "ecode",
+    "summary": "Unknown",
+    "explanation": "Unknown - update related?",
+    "solution": "Replace GPU?"
 }
